@@ -1,7 +1,9 @@
 #!/bin/bash
 
-#Clone files into dotfiles
+echo "Cloning git repo into ~/dotfiles"
 git clone https://github.com/hatboysam/dotfiles.git ~/dotfiles
 
-#Symlink vimrc
+echo "Symlinking ~/.vimrc"
 ln -s ~/dotfiles/vimrc ~/.vimrc
+
+echo "Done"
